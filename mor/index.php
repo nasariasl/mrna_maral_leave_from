@@ -48,33 +48,33 @@ if ($mor_Radio == 'saat') {
     $base_w = abs($helper[4] - $helper[0]);
     // $base_height = abs($base_coords[5] - $base_coords[1]);
     // $base_descent = abs($base_coords[1]);
-    @imagettftext($im, 12, -1,738-$base_w, 136, $black, $font, $name);
+    @imagettftext($im, 12, -1,735-$base_w, 142, $black, $font, $name);
 
 //mor-vahed
     $helper = imageTTFBbox(12,0,$font,$vahed);
     $base_w = abs($helper[4] - $helper[0]);
-    @imagettftext($im, 12, -1,224-$base_w, 136, $black, $font, $vahed);
+    @imagettftext($im, 12, -1,224-$base_w, 142, $black, $font, $vahed);
     
 //mor_day
     $mor_day_helper = imageTTFBbox(12,0,$font,$mor_day);
     $base_loc_mor_day = abs($mor_day_helper[4] - $mor_day_helper[0]);
     // $base_height = abs($base_coords[5] - $base_coords[1]);
     // $base_descent = abs($base_coords[1]);
-    @imagettftext($im, 12, -1,289-$base_loc_mor_day, 177, $black, $font, $mor_day);
+    @imagettftext($im, 12, -1,289-$base_loc_mor_day, 184, $black, $font, $mor_day);
     
     //mor_date
     $mor_day_helper = imageTTFBbox(12,0,$font,$mor_date);
     $base_loc_mor_day = abs($mor_day_helper[4] - $mor_day_helper[0]);
     // $base_height = abs($base_coords[5] - $base_coords[1]);
     // $base_descent = abs($base_coords[1]);
-    @imagettftext($im, 12, -1,183-$base_loc_mor_day, 177, $black, $font, $mor_date);
+    @imagettftext($im, 12, -1,183-$base_loc_mor_day, 184, $black, $font, $mor_date);
 
 //mor_date
     $mor_day_helper = imageTTFBbox(12,0,$font,$mor_day);
     $base_loc_mor_day = abs($mor_day_helper[4] - $mor_day_helper[0]);
     // $base_height = abs($base_coords[5] - $base_coords[1]);
     // $base_descent = abs($base_coords[1]);
-    @imagettftext($im, 12, -1,289-$base_loc_mor_day, 177, $black, $font, $mor_day);
+    @imagettftext($im, 12, -1,289-$base_loc_mor_day, 184, $black, $font, $mor_day);
     
 //now Date
     $helper = imageTTFBbox(12,0,$font,$nowdate);
@@ -85,16 +85,16 @@ if ($mor_Radio == 'saat') {
 //start Time
     $helper = imageTTFBbox(12,0,$font,$start_time);
     $base_w = abs($helper[4] - $helper[0]);
-    @imagettftext($im, 12, 0, 656-$base_w, 179, $black, $font, $start_time);
+    @imagettftext($im, 12, 0, 656-$base_w, 184, $black, $font, $start_time);
 //end Time
     $helper = imageTTFBbox(12,0,$font,$end_time);
     $base_w = abs($helper[4] - $helper[0]);
-    @imagettftext($im, 12, 0, 540-$base_w, 179, $black, $font, $end_time);
+    @imagettftext($im, 12, 0, 540-$base_w, 184, $black, $font, $end_time);
     
     //mor_num
     $helper = imageTTFBbox(12,0,$font,$mor_num);
     $base_w = abs($helper[4] - $helper[0]);
-    @imagettftext($im, 12, 0, 402-$base_w, 179, $black, $font, $mor_num);
+    @imagettftext($im, 12, 0, 402-$base_w, 184, $black, $font, $mor_num);
     
 } else { 
     
@@ -105,18 +105,18 @@ if ($mor_Radio == 'saat') {
     $base_w = abs($helper[4] - $helper[0]);
     // $base_height = abs($base_coords[5] - $base_coords[1]);
     // $base_descent = abs($base_coords[1]);
-    @imagettftext($im, 12, -1,738-$base_w, 136, $black, $font, $name);
+    @imagettftext($im, 12, -1,735-$base_w, 142, $black, $font, $name);
 
 //mor-vahed
     $helper = imageTTFBbox(12,0,$font,$vahed);
     $base_w = abs($helper[4] - $helper[0]);
-    @imagettftext($im, 12, -1,227-$base_w, 136, $black, $font, $vahed);
+    @imagettftext($im, 12, -1,227-$base_w, 142, $black, $font, $vahed);
 
 //now Date
     $helper = imageTTFBbox(12,0,$font,$nowdate);
     $base_w = abs($helper[4] - $helper[0]);
     @imagettftext($im, 12, 0, 792-$base_w, 51, $black, $font, $nowdate);
-    @imagettftext($im, 12, 0, 744-$base_w, 220, $black, $font, $nowdate);
+    @imagettftext($im, 12, 0, 744-$base_w, 222, $black, $font, $nowdate);
     
     //start Time
     $helper = imageTTFBbox(12,0,$font,$start_time);
@@ -130,7 +130,7 @@ if ($mor_Radio == 'saat') {
 //mor_num
     $helper = imageTTFBbox(12,0,$font,$mor_num);
     $base_w = abs($helper[4] - $helper[0]);
-    @imagettftext($im, 12, 0, 351-$base_w, 180, $black, $font, $mor_num);
+    @imagettftext($im, 12, 0, 351-$base_w, 184, $black, $font, $mor_num);
 } 
     // Set the content-type
 header('Content-type: image/jpeg');
