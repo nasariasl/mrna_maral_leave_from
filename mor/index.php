@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 require_once('persian_txt2pic.php');
 
 if(!isset($_POST['mor-Radio'])){
@@ -133,12 +133,14 @@ if ($mor_Radio == 'saat') {
     @imagettftext($im, 12, 0, 351-$base_w, 184, $black, $font, $mor_num);
 } 
     // Set the content-type
+//header('Content-type: image/png');
 header('Content-type: image/jpeg');
 header('Content-Disposition: attachment; filename="'.$_POST['mor-name']."_".$nowdate."_".$mor_Radio.'".jpg"');
 
     
     // Using imagepng() results in clearer text compared with imagejpeg()
-    imagepng($im);
+    //imagepng($im);
+    imagejpeg($im);
     imagedestroy($im);
 }//else1
 ?>
